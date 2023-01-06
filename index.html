@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Library</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+  </head>
+  <body>
+    <div class="shadow p-3 mb-5 bg-body rounded container">
+        <header>
+            <div class="input-group-text">
+                <h1 style="font-size: 2vw;">Library Management System</h1>
+                <img src="images/logo.png" style="margin-left: 45%; max-width: 20vw;" >
+            </div>
+        </header>
+        <br>
+        <div class="input-group input-group-lg m-3">
+            <h2> Log In as :</h2>
+            <div class="input-group input-group-lg m-3">
+                <button class="form-control input-group-text mx-5" onclick="location.href='login.php'">Librarian</button>
+                <button class="form-control input-group-text mx-5" onclick="location.href='loginStudent.php'">Student</button>
+            </div>
+        </div>
+        <!-- <div class="input-group input-group-lg m-3">
+          <span>Already logged in ...</span>
+          <h2><br>Log In as :</h2>
+          <div class="input-group input-group-lg m-3">
+              <form method="post" type="button" class="form-control input-group-text mx-5">LogIn</form>
+              <?php 
+              if($_SERVER["REQUEST_METHOD"] == "POST"){
+                if($_SESSION['username']== "prianshukla"){
+                  echo ' <script>location.replace("About.php")</script>';
+                } else if(isset($_SESSION['username'])){
+                  echo ' <script>location.replace("StudentLanding.php")</script>';
+                } else{
+                  echo '<script> alert("Do login first");</script>';
+                }
+              }
+              
+              ?>
+          </div> -->
+      </div>
+        <footer class="form-control input-group-text mt-5">
+            &copy; Priyanshu Shukla
+          </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+  </body>
+</html>

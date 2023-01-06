@@ -1,0 +1,13 @@
+
+
+
+.navBar{
+    display: flex;
+    flex-direction: row;
+
+}
+
+.form{
+    margin: 0px 25%;    
+}
+
